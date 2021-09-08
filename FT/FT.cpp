@@ -22,14 +22,10 @@ FT::FT(const std::vector<float> &p_Data) : m_Data(p_Data),
     
 }
 
-FT::~FT()
-{
-}
-
 std::complex<float> FT::Update(float p_fStep)
 {
     m_fSpan += p_fStep;
-    std::cout << m_fSpan << std::endl;
+    //std::cout << m_fSpan << std::endl;
     unsigned int c = 0;
     std::complex<float> sum(0, 0);
     float fact = (1.f / m_Data.size()) * m_fSpan * 2.0 * M_PI;

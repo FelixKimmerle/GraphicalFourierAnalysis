@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 
     sf::ContextSettings settings(0, 0, 4);
 
-    sf::RenderWindow window(sf::VideoMode(800, 800), "SFML works!", sf::Style::Default, settings);
+    sf::RenderWindow window(sf::VideoMode(800, 800), "FT", sf::Style::Close, settings);
     window.setVerticalSyncEnabled(true);
     RoundChart chart(200, 1000);
     chart.setPosition(100, 200);
